@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 const CustomNode = ({ data }) => {
     return (
         <div>
-            <div className={`w- border ${data?.input_type ? 'border-blue-500' : 'border-red-500'}  rounded-2xl   grid grid-cols-[1fr,4fr,1fr]`}>
+            <div className={` w-full border ${data?.input_type ? 'border-blue-500' : 'border-red-500'}  rounded-2xl   flex justify-between items-center`}>
             <h1 className=" p-1 capitalize text-black font-bold text-sm text-center">
                     {data?.output_type ? <span>{data?.output_type}</span>  : <span className=' flex justify-start items-center text-xs w-full h-full border border-gray-500 text-gray-500 rounded-full border-l-transparent font-thin '><FaArrowRight></FaArrowRight></span>}
                 </h1>
